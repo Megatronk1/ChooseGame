@@ -1,6 +1,11 @@
 //Room data
-int roomCount = 4;
-String [] description = new String[roomCount];
+String [] description =
+  {
+    "Ye find yeself in a dungeon. Ye see a gate and a hole in the wall.",
+    "You are in the LEFT CHAMBER. Go left to return to start, go right to see the dog statue.",
+    "You went right",
+    "The dog statue is so cool."
+  };
 
 //Player's data
 int currentRoom = 0;
@@ -11,11 +16,6 @@ void setup()
   size(900,600);
   textAlign(CENTER);
   textSize(40);
-  
-  description[0] = "Ye find yeself in a dungeon. Ye see a gate and a hole in the wall.";
-  description[1] = "You are in the LEFT CHAMBER. Go left to return to start, go right to see the dog statue.";
-  description[2] = "You went right";
-  description[3] = "The dog statue is so cool.";
 }
 
 int changeRoom()
