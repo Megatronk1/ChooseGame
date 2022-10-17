@@ -5,6 +5,19 @@ String [] description =
     "Ye find yeself in a dungeon. Ye see a gate and a hole in the wall.",
     "You are in the LEFT CHAMBER. Go left to return to start, go right to see the dog statue.",
     "You went right",
+    "The dog statue is so cool.",
+    "The dog statue is so cool.",
+    "The dog statue is so cool.",
+    "The dog statue is so cool.",
+    "The dog statue is so cool.",
+    "The dog statue is so cool.",
+    "The dog statue is so cool.",
+    "The dog statue is so cool.",
+    "The dog statue is so cool.",
+    "The dog statue is so cool.",
+    "The dog statue is so cool.",
+    "The dog statue is so cool.",
+    "The dog statue is so cool.",
     "The dog statue is so cool."
   };
 
@@ -78,11 +91,12 @@ void drawButtons()
 
 void mouseReleased()
 {
+  choice = -1;
   if( mouseX > width-100 ) //<>//
     choice = 2;
   if( mouseX < 100 )
     choice = 1;
-    
+   if( mouseX > width-100 || mouseX < 100)
   currentRoom = changeRoom();
   choice = -1;
 }
