@@ -2,23 +2,11 @@
 //Room data
 String [] description =
   {
-    "Ye find yeself in a dungeon. Ye see a gate and a hole in the wall.",
-    "You are in the LEFT CHAMBER. Go left to return to start, go right to see the dog statue.",
-    "You went right",
-    "The dog statue is so cool.",
-    "The dog statue is so cool.",
-    "The dog statue is so cool.",
-    "The dog statue is so cool.",
-    "The dog statue is so cool.",
-    "The dog statue is so cool.",
-    "The dog statue is so cool.",
-    "The dog statue is so cool.",
-    "The dog statue is so cool.",
-    "The dog statue is so cool.",
-    "The dog statue is so cool.",
-    "The dog statue is so cool.",
-    "The dog statue is so cool.",
-    "The dog statue is so cool."
+    "Welcom to Jumanji, i'm glad that you arrived DR. Brave Stone. Jumanji is in grave danger. chose go left or go right for more information go on then don't be scared its not like your going to die or anything.",
+    "you got eaten by a hippo, you died",
+    "you died.",
+    "you went left.",
+    "you died."
   };
 
 //Player's data
@@ -64,7 +52,7 @@ void draw()
   
   //Draws the text in the middle of the screen
   fill(255);
-  text(description[currentRoom],width/2-250,height/2,500,400);
+  text(description[currentRoom],width/2-250,50,500,400);
 }
 
 void drawButtons()
