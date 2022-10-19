@@ -2,11 +2,27 @@
 //Room data
 String [] description =
   {
-    "Welcom to Jumanji, i'm glad that you arrived DR. Brave Stone. Jumanji is in grave danger. chose go left or go right for more information go on then don't be scared its not like your going to die or anything.",
-    "you got eaten by a hippo, you died",
-    "you died.",
-    "you went left.",
-    "you died."
+    "Welcom to Jumanji, i'm glad that you arrived DR. Brave Stone. Jumanji is in grave danger. chose go left or go right for more information",
+    "i ain't dying today hippo, you got to have eyes in the back of your head, gets eaten by a snake you died",
+    //1
+    "you got to get the orange stone and show it the sun choese left or right. Your totally not going to die",
+    //2
+    "your in a town and you have to fight your weekness chose left or right.",
+    //3
+    "your on the monky bridge and your runnig choes left or right."
+    //4
+    ""
+    //5
+    ""
+    //6
+    ""
+    //7
+    ""
+    //8
+    ""
+    //9
+    ""
+    //10
   };
 
 //Player's data
@@ -22,20 +38,24 @@ void setup()
 
 int changeRoom()
 {
-  if( choice == 1 )
+  if( choice == 1 ) //left
     switch( currentRoom )
     {
       case 0:
         return 1;
       default:
         return 0;
+      case 2:
+        return 4;
     }
-  else
+  else //right
     switch( currentRoom )
     {
       case 0:
         return 2;
       case 1:
+        return 3;
+      case 2:
         return 3;
       default:
         return 0;
